@@ -23,13 +23,13 @@ public class Calculator {
         System.out.println("Sum is: " + sum);
 
         int difference = secondNumber - firstNumber;
-        System.out.println("Difference is:" + difference);
+        System.out.println("\nDifference is:" + difference);
 
         int product = secondNumber * firstNumber;
-        System.out.println("Product equals: " + product);
+        System.out.println("\nProduct equals: " + product);
 
-        int quotient = secondNumber / firstNumber;
-        System.out.println("Quotient is: " + quotient);
+        int division = secondNumber / firstNumber;
+        System.out.println("\nDivision is: " + division);
 
     }
 }

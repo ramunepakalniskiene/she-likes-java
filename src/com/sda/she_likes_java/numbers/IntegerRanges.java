@@ -26,5 +26,6 @@ public class IntegerRanges {
         System.out.println("maximal byte value is: " + Byte.MAX_VALUE);
 
         System.out.println("-------------------------");
+
     }
 }

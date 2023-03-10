@@ -9,10 +9,11 @@ public class BouncerInDisco {
         int age = scanner.nextInt();
 
         System.out.println("What is your height?");
-        int height = scanner.nextInt();
+        double height = scanner.nextDouble();
+        boolean isAllowedToParty= age>=16 && height>=171;
 
-
-        if (age >= 16 && height >= 171) {
+//        if (age >= 16 && height >= 171)
+          if(isAllowedToParty) {
             System.out.println("You are very welcome to the best disco in the world!");
         } else {
             System.out.println("Please join us next year!");

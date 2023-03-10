@@ -8,11 +8,11 @@ public class BouncerInDisco {
         System.out.println("How old are you?");
         int age = scanner.nextInt();
 
-        System.out.println("What is your heigth?");
-        double height = scanner.nextDouble();
-        System.out.println(" Welcome");
+        System.out.println("What is your height?");
+        int height = scanner.nextInt();
 
-        if (age > 16 && height >= 1.70) {
+
+        if (age >= 16 && height >= 171) {
             System.out.println("You are very welcome to the best disco in the world!");
         } else {
             System.out.println("Please join us next year!");

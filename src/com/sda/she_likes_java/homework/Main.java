@@ -5,11 +5,11 @@ public class Main {
 
         System.out.println("Hello world!");
         int myDaugtherAge = 11;
-        myDaugtherAge=12;
+        myDaugtherAge = 12;
         System.out.println(myDaugtherAge);
 
-        String myName="Ramune";
-        String mySurName="Pakalniskiene";
+        String myName = "Ramune";
+        String mySurName = "Pakalniskiene";
         System.out.println(myName + "  " + mySurName);
 
         String five = "5";
@@ -18,12 +18,12 @@ public class Main {
 
         // true false
         boolean trueValue = true;
-        trueValue=false;
+        trueValue = false;
         System.out.println(trueValue);
 
         //11.0
         int eleven = 11;
         double trueEleven = 11;
-        System.out.println(eleven +  " + " + 11);
+        System.out.println(eleven + " + " + 11);
     }
 }

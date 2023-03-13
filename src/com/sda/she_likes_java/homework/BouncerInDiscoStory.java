@@ -15,12 +15,8 @@ public class BouncerInDiscoStory {
         boolean ableToSingWell;
         ableToSingWell = scanner.nextBoolean();
 
-        boolean youngBouncer;
-        boolean oldBouncer;
 
-
-        youngBouncer = age >= 18 && height >= 1.71 && ableToSingWell;
-        oldBouncer = age < 18 || height > 1.71 || ableToSingWell;
+        boolean youngBouncer = age >= 18 && height >= 1.71 && ableToSingWell;
 
 
         if (youngBouncer) {
@@ -28,11 +24,14 @@ public class BouncerInDiscoStory {
 
         } else {
             System.out.println("Young: go home");
-                if (oldBouncer) {
-                    System.out.println("Old: Go quickly to the disco");
+            boolean oldBouncer = age >= 18 || height > 1.71 || ableToSingWell;
+            if (oldBouncer) {
+                System.out.println("Old: Go quickly to the disco");
+            } else {
+                System.out.println(":( :( :(");
 
 
+            }
         }
-}
     }
 }

@@ -16,6 +16,7 @@ public class FunctionsFirstExample {
 
         printMyName();
     }
+
     public static void printMyName() {
         int numberOfTimes = 5;
         while (numberOfTimes > 0) {

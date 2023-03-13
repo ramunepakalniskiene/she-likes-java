@@ -28,8 +28,8 @@ public class BouncerInDiscoStory {
             if (oldBouncer) {
                 System.out.println("Old: Go quickly to the disco");
             } else {
-                System.out.println(":( :( :(");
 
+                System.out.println(":( :( :(");
 
             }
         }

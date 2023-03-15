@@ -7,16 +7,16 @@ public class BouncerInDiscoStoryFunctions {
 
 
         Scanner inputReader = new Scanner(System.in);
-//        System.out.println("How old are you?");
-//        int age = inputReader.nextInt();
-//
-//        System.out.println("What is your height?");
-//        double height = inputReader.nextDouble();
-//
-//        System.out.println("Are you able to sing well?");
-//        boolean ableToSingWell = inputReader.nextBoolean();
+        System.out.println("How old are you?");
+        int age = inputReader.nextInt();
 
-        boolean youngBouncer = checkedByYoungBouncer(19, 175, false);
+        System.out.println("What is your height?");
+        int height = inputReader.nextInt();
+
+        System.out.println("Are you able to sing well?");
+        boolean ableToSingWell = inputReader.nextBoolean();
+
+       boolean youngBouncer = checkedByYoungBouncer(age, height, ableToSingWell);
 
         if (youngBouncer) {
             System.out.println("Well come to the best disco in the world!");
@@ -25,7 +25,7 @@ public class BouncerInDiscoStoryFunctions {
             System.out.println();
             System.out.println("Wait I'll try old bouncer");
             System.out.println();
-            boolean oldBouncer = checkedByOldBouncer(19,1,true);
+            boolean oldBouncer = checkedByOldBouncer(age, height, ableToSingWell);
             if (oldBouncer) {
                 System.out.println("OldBouncer: WELCOME TO THE DISCO!!");
             } else {
@@ -33,12 +33,11 @@ public class BouncerInDiscoStoryFunctions {
             }
         }
     }
+    // first line is function prototype
     public static boolean checkedByYoungBouncer(int age, int height, boolean isAbleToSingWell){
-        boolean youngBouncer = age >= 18 && height >= 1.71 && isAbleToSingWell;
-        return youngBouncer;
+       return  age >= 18 && height >= 1.71 && isAbleToSingWell;
     }
     public static boolean checkedByOldBouncer(int age, int height, boolean isAbleToSingWell){
-        boolean oldBouncer = age >= 18 || height >= 1.71 || isAbleToSingWell;
-        return oldBouncer;
+        return age >= 18 || height >= 1.71 || isAbleToSingWell;
     }
 }

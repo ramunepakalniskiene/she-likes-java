@@ -5,6 +5,7 @@ public class CalculatorWithFunctions {
         System.out.println("Let's start calculations");
         sum(3,4);
         System.out.println(sum(1,2));
+        System.out.println(12%13);
     }
     public static int sum(int firstNumber, int secondNumber){
 //        System.out.println(" I'm not so smart calculator");

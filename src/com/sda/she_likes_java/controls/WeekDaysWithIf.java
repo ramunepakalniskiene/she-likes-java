@@ -21,7 +21,7 @@ public class WeekDaysWithIf {
         } else if (ordinalNumberOfWeekday == 5) {
             System.out.println("It's Friday");
         } else if (ordinalNumberOfWeekday == 6) {
-            System.out.println("It's Saurday");
+            System.out.println("It's Saturday");
         } else if (ordinalNumberOfWeekday == 7) {
             System.out.println("It's Sunday");
 

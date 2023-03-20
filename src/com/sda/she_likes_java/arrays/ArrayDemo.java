@@ -26,5 +26,8 @@ public class ArrayDemo {
         numbers[4]=25;
 
         System.out.println("number[3] is = " + numbers[3]);
+        System.out.println("Size of the numbers array is: " + numbers.length);
+        // arrays have fixed length, they cannot grow
+//        numbers.length=10;
     }
 }

@@ -5,10 +5,12 @@ public class ArrayWithHundredElements {
         int[] array = new int[100];
 
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Current value is: " + i);
             array[i] = 3 * i;
-            System.out.println("number: " + array[i]);
+            System.out.println("number["+ i +"]=" + array[i]);
         }
+        for (int i = array.length - 1; i > -1; i--) {
+            System.out.println("number[" + i + "] = " + array[i]);
 
+        }
     }
 }

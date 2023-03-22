@@ -14,7 +14,6 @@ public class PersonExample {
         you.name="Mariusz";
         System.out.println("My name currently is: " + me.name);
         System.out.println("You name currently is: " + you.name);
-
     }
 
 }

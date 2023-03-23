@@ -14,15 +14,52 @@ public class DrawThreeNumbers {
         int middleNumber;
         int maxNumber;
 
+        System.out.println("Three random numbers are: ");
         System.out.println(firstNumber);
         System.out.println(secondNumber);
         System.out.println(thirdNumber);
-        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
-//            firstNumber=maxNumber;
-//
-//        }if(){
-//
-//        }
+
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
+            maxNumber = firstNumber;
+            if (secondNumber >= thirdNumber) {
+                middleNumber = secondNumber;
+                minNumber = thirdNumber;
+                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+            } else {
+                middleNumber = thirdNumber;
+                minNumber = secondNumber;
+                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+            }
+        }
+        if (secondNumber >= thirdNumber && secondNumber >= firstNumber) {
+            maxNumber = secondNumber;
+            if (thirdNumber >= firstNumber) {
+                middleNumber = thirdNumber;
+                minNumber = firstNumber;
+                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+            } else {
+                middleNumber = firstNumber;
+                minNumber = thirdNumber;
+                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+            }
+        }
+        if (thirdNumber >= secondNumber && thirdNumber >= firstNumber) {
+            maxNumber = thirdNumber;
+            if (firstNumber >= secondNumber) {
+                middleNumber = firstNumber;
+                minNumber = secondNumber;
+                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+            } else {
+                middleNumber = secondNumber;
+                minNumber = firstNumber;
+                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+            }
         }
     }
 }
+
+
+
+
+
+

@@ -24,11 +24,11 @@ public class DrawThreeNumbers {
             if (secondNumber >= thirdNumber) {
                 middleNumber = secondNumber;
                 minNumber = thirdNumber;
-                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+                System.out.println("1st IF option 1st part: \n minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
             } else {
                 middleNumber = thirdNumber;
                 minNumber = secondNumber;
-                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+                System.out.println("1st IF option 2nd part: \n minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
             }
         }
         if (secondNumber >= thirdNumber && secondNumber >= firstNumber) {
@@ -36,24 +36,25 @@ public class DrawThreeNumbers {
             if (thirdNumber >= firstNumber) {
                 middleNumber = thirdNumber;
                 minNumber = firstNumber;
-                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+                System.out.println("2nd IF option 1st part: \n minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
             } else {
                 middleNumber = firstNumber;
                 minNumber = thirdNumber;
-                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
-            }
+
+            } System.out.println("2nd IF option 2nd part: \n minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
         }
         if (thirdNumber >= secondNumber && thirdNumber >= firstNumber) {
             maxNumber = thirdNumber;
             if (firstNumber >= secondNumber) {
                 middleNumber = firstNumber;
                 minNumber = secondNumber;
-                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+                System.out.println("3rd IF option 1st part: \n minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
             } else {
                 middleNumber = secondNumber;
                 minNumber = firstNumber;
-                System.out.println(" minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
+                System.out.println("3rd IF option 2nd part: \n minNumber is:  " + minNumber + "\n middleNumber is: " + middleNumber + "\n maxNumber is: " + maxNumber);
             }
+
         }
     }
 }

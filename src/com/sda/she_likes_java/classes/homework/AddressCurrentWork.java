@@ -4,6 +4,7 @@ public class AddressCurrentWork {
     public static void main(String[] args) {
 
         Address currentWork = new Address();
+
         currentWork.country="LITHUANIA";
         currentWork.city="Klaipeda";
         currentWork.street="Naujoji uosto";

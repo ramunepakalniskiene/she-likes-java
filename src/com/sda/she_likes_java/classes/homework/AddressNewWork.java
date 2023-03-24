@@ -1,9 +1,8 @@
 package com.sda.she_likes_java.classes.homework;
 
-
-
 public class AddressNewWork {
     public static void main(String[] args) {
+
         Address newWork = new Address();
 
         newWork.country = "United States of America";

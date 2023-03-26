@@ -3,16 +3,6 @@ package com.sda.she_likes_java.classes;
 public class Address {
 
 
-
-    @Override
-    public String toString() {
-        return "Address{" +
-                "country='" + countryAddressClass + '\'' +
-                ", city='" + cityAddressClass + '\'' +
-                ", street='" + streetAddressClass + '\'' +
-                ", postalCode=" + postalCodeAddressClass +
-                '}';
-    }
     String countryAddressClass="India";
     String cityAddressClass="Mumbai";
     String streetAddressClass="Chakra-chakra";
@@ -32,6 +22,17 @@ public class Address {
         System.out.println(myFirstAddress);
         System.out.println(mySecondAddress);
     }
+    @Override
+    public String toString() {
+        return "Address{" +
+                "countryAddressClass='" + countryAddressClass + '\'' +
+                ", cityAddressClass='" + cityAddressClass + '\'' +
+                ", streetAddressClass='" + streetAddressClass + '\'' +
+                ", postalCodeAddressClass=" + postalCodeAddressClass +
+                '}';
+    }
+
+
 }
 
 

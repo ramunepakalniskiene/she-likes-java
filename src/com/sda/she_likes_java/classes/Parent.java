@@ -10,10 +10,6 @@ public class Parent {
     //- secondChild (use class Person)
 
 
-    @Override
-    public String toString() {
-        return "Parent{}";
-    }
 
     public static void main(String[] args) {
 
@@ -33,6 +29,8 @@ public class Parent {
         firstChild.addressPersonClass.countryAddressClass="United States of America, ";
         firstChild.addressPersonClass.cityAddressClass="New York, ";
         firstChild.addressPersonClass.streetAddressClass="5th avenue ";
+
+        System.out.println(firstChild.toString());
 
 
         System.out.println("First child is "+

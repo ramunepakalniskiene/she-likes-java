@@ -1,6 +1,4 @@
-package com.sda.she_likes_java.classes;
-
-import com.sda.she_likes_java.classes.excercise_15.Address;
+package com.sda.she_likes_java.classes.excercise_15;
 
 public class Person {
     String name;

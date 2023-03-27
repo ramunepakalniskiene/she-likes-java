@@ -11,10 +11,10 @@ public class Address {
                 '}';
     }
 
-    String countryAddressClass="India";
-    String cityAddressClass="Mumbai";
-    String streetAddressClass="Pedder Road";
-    int postalCodeAddressClass=23568;
+    String countryAddressClass; //="India";
+    String cityAddressClass; //="Mumbai";
+    String streetAddressClass; //="Pedder Road";
+    int postalCodeAddressClass; //=23568;
     public static void main(String[] args) {
         Address myFirstAddress = new Address();
         myFirstAddress.countryAddressClass = "Poland";

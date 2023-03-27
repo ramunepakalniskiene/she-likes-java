@@ -1,5 +1,7 @@
 package com.sda.she_likes_java.classes;
 
+
+
 public class PersonExample {
     public static void main(String[] args) {
         System.out.println("Let's use ou newly created class Person");

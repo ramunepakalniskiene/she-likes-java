@@ -7,13 +7,13 @@ public class AddressCurrentWork {
 
         Address currentWork = new Address();
 
-        currentWork.countryAddressClass="LITHUANIA";
-        currentWork.cityAddressClass="Klaipeda";
-        currentWork.streetAddressClass="Naujoji uosto";
-        currentWork.postalCodeAddressClass=96177;
+        currentWork.country="LITHUANIA";
+        currentWork.city="Klaipeda";
+        currentWork.street="Naujoji uosto";
+        currentWork.postalCode="96177";
 
-        System.out.println("I am now in " + currentWork.countryAddressClass);
-        System.out.printf("I am currently working in %s in %s%n",currentWork.countryAddressClass,currentWork.cityAddressClass);
-        System.out.printf("The street name is %s postal code %s", currentWork.streetAddressClass, currentWork.postalCodeAddressClass);
+        System.out.println("I am now in " + currentWork.country);
+        System.out.printf("I am currently working in %s in %s%n",currentWork.country,currentWork.city);
+        System.out.printf("The street name is %s postal code %s", currentWork.street, currentWork.postalCode);
     }
 }

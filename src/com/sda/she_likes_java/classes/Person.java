@@ -6,7 +6,7 @@ public class Person {
     String name;
     String surname;
     int age;
-    Address addressPersonClass=new Address();
+    Address addressPersonClass;
 
 
 }

@@ -14,4 +14,5 @@ public class AddressNewWork {
         System.out.println("Please note, the address is: " + newWork.cityAddressClass +newWork.streetAddressClass+newWork.postalCodeAddressClass);
         System.out.printf("Please note, the address %s, %s, %s",newWork.cityAddressClass, newWork.streetAddressClass, newWork.postalCodeAddressClass);
     }
+
 }

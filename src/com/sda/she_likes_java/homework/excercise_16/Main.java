@@ -1,4 +1,4 @@
-package com.sda.she_likes_java.classes.excercise_16;
+package com.sda.she_likes_java.homework.excercise_16;
 
 public class Main {
     public static void main(String[] args) {

@@ -25,6 +25,7 @@ public class House {
         this.numberOfBathrooms = numberOfBathrooms;
     }
 
+
     @Override
     public String toString() {
         return "House{" +

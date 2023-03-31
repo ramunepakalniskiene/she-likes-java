@@ -6,7 +6,10 @@ public class Main {
         Owner John=new Owner("Roger", "Freeman",dog);
 
 
-        System.out.println("The owner" + John );
+        System.out.println("The owner and this pet: " + John );
+        System.out.println(dog.getAge());
+        dog.setAge(5);
+        System.out.println(dog);
 
     }
 }

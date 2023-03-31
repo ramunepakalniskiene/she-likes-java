@@ -3,12 +3,12 @@ package com.sda.she_likes_java.classes.excercise_16;
 public class Owner {
     private String firstName;
     private String surename;
-    Animal animal= new Animal();
+    Animal myAnimal;
 
     public Owner(String firstName,String surename,Animal animal){
         this.firstName=firstName;
         this.surename=surename;
-        this.animal=animal;
+        this.myAnimal=myAnimal;
     }
     public Owner(){
 
@@ -31,11 +31,11 @@ public class Owner {
     }
 
     public Animal getAnimal() {
-        return animal;
+        return myAnimal;
     }
 
     public void setAnimal(Animal animal) {
-        this.animal = animal;
+        this.myAnimal = animal;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class Owner {
         return "Owner{" +
                 "firstName='" + firstName + '\'' +
                 ", surename='" + surename + '\'' +
-                ", animal=" + animal +
+                ", animal=" + myAnimal +
                 '}';
     }
 }

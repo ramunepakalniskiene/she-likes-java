@@ -4,7 +4,7 @@ public class WashMachine {
     private String brand;
     private String model;
 
-    private int serialNumber;
+    private static int serialNumber;
 
     private static int numberOfCreatedMachines;
 

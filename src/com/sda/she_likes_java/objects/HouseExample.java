@@ -7,42 +7,41 @@ import javax.crypto.spec.PSource;
 public class HouseExample {
     public static void main(String[] args) {
 
+            House myHouse = new House(4, 2);
+            myHouse.setNumberOfFloors(2);
+            System.out.println("I've got new house: " + myHouse);
 
-        House myHouse = new House(4, 2);
-        System.out.println("I've got a new house: " + myHouse);
-        myHouse.setNumberOfRooms(10);
-        System.out.println("Setter was used to set a new quantity of rooms: I've got a new house: " + myHouse + "get numbers of rooms separately using getter: "+ myHouse.getNumberOfRooms());
+            System.out.println("Currently my house has got " + myHouse.getNumberOfRooms() + " rooms");
+            System.out.println("I need more rooms...");
+            myHouse.setNumberOfRooms(5);
 
-        System.out.println("-----------------------");
-        HouseOwner wife = new HouseOwner("Mary", myHouse);
-        HouseOwner husband = new HouseOwner("John", myHouse);
+            System.out.println("Hey, I've got more rooms now...");
+            System.out.println("Currently my house has got " + myHouse.getNumberOfRooms() + " rooms");
 
-        System.out.println("Mary would like to repair her house");
-        wife.getHouse().setNumberOfBathrooms(3);
-        System.out.println("House after renovation: "  + myHouse);
+            System.out.println("=======================================");
+            HouseOwner wife = new HouseOwner("Mary", myHouse);
+            HouseOwner husband = new HouseOwner("Jack", myHouse);
 
-        husband.getHouse().setNumberOfBathrooms(1);
-        System.out.println("House after  John renovation: "  + myHouse);
+            System.out.println("Mary would like to repair her house");
+            wife.getHouse().setNumberOfBathrooms(3); // House house = wife.getHouse(); house.setNumberOfBathrooms(3);
+            System.out.println("Currently the house looks like this: " + myHouse);
 
-        System.out.println("Mary " + wife);
-        System.out.println("John " + husband);
+            husband.getHouse().setNumberOfBathrooms(1);
+            System.out.println("Currently the house looks like this: " + myHouse);
 
-        myHouse.setNumberOfBathrooms(2);
-        System.out.println("Number of bathrooms are: " + myHouse);
+            System.out.println("Mary: " + wife);
+            System.out.println("Jack: " + husband);
 
-        myHouse= new House(7,7);
-        System.out.println("My house reference: " + myHouse);
+//        String haha = new House(1, 2);
+            myHouse = new House(1, 1);
+            System.out.println("Now myHouse reference: " + myHouse);
+            System.out.println("Mary: " + wife);
+            System.out.println("Jack: " + husband);
 
-        System.out.println("Mary " + wife);
-        System.out.println("John " + husband);
-        wife.setHouse(myHouse);
-        System.out.println(wife);
-        System.out.println("---------------------------------");
-
-        myHouse=new House(10,10);
-        wife.setHouse(myHouse);
-        System.out.println("Mary: " + wife);
-        System.out.println("John: " + husband);
-        wife.setHouse(husband.getHouse());
-}
-}
+            myHouse = new House(10, 10);
+            wife.setHouse(myHouse);
+            System.out.println("Mary: " + wife);
+            System.out.println("Jack: " + husband);
+            wife.setHouse(husband.getHouse());
+        }
+    }

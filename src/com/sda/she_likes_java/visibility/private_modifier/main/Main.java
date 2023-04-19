@@ -12,5 +12,6 @@ public class Main {
 //
 //        // can not see color form outside package because it is default modifier
 //        myNewCar.colour="Silver";
+
     }
 }

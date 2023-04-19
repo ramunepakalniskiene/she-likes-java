@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Car myNewCar = new Car();
         // myNewCar.brand - not possible to access, because brand variable is PRIVATE
-        myNewCar.model ="Mercedes";
+        myNewCar.model ="Avensis";
         myNewCar.colour="Silver";
+        myNewCar.setBrand("Toyota");
     }
 }

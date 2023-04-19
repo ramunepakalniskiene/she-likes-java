@@ -17,5 +17,4 @@ public class NamesClashes2 {
         java.util.Date utilDate=new java.util.Date(1000);
     }
 
-
 }

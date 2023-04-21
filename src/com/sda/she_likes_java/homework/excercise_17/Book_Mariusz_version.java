@@ -15,6 +15,7 @@ public class Book_Mariusz_version {
         System.out.println("First copy " + twoBooks[0]);
         System.out.println("Second copy" + twoBooks[1]);
         System.out.printf("Number of copies of all books: [%d]%n", Book.getNumberOfCreatedBooks());
+
     }
 
     public static void createBourneTrilogy() {

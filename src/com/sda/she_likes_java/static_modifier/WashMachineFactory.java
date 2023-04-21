@@ -35,7 +35,7 @@ public class WashMachineFactory {
         for(int i=0;i<10; i++){
         makeSomeWashMachines();
         }
-        System.out.println("Hey, we have totaly produced: " + WashMachine.getNumberOfCreatedMachines());
+        System.out.println("Hey, we have totally produced: " + WashMachine.getNumberOfCreatedMachines());
         // some generic way to obtain number of produced machines
 
 

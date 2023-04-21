@@ -1,22 +1,35 @@
 package com.sda.she_likes_java.homework.excercise_17;
 
-public class Book {
-    String Author;
-    String title;
-    int yearOfProduction;
+import java.time.Year;
 
-    public Book(String author, String title, int yearOfProduction) {
-        this.Author = author;
+public class Book {
+    static int numberOfCreatedBooks;
+    String author;
+    String title;
+    Year publicationYear;
+
+    public Book(String author, String title, Year publicationYear) {
+        this.author = author;
         this.title = title;
-        this.yearOfProduction = yearOfProduction;
+        this.publicationYear = publicationYear;
+        numberOfCreatedBooks++;
+    }
+
+    public static int getNumberOfCreatedBooks() {
+
+        return numberOfCreatedBooks;
+    }
+
+    public static void setNumberOfCreatedBooks(int numberOfCreatedBooks) {
+        Book.numberOfCreatedBooks = numberOfCreatedBooks;
     }
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
 
     public void setAuthor(String author) {
-        Author = author;
+        this.author = author;
     }
 
     public String getTitle() {
@@ -27,21 +40,24 @@ public class Book {
         this.title = title;
     }
 
-    public int getYearOfProduction() {
-        return yearOfProduction;
+    public Year getPublicationYear() {
+        return publicationYear;
     }
 
-    public void setYearOfProduction(int yearOfProduction) {
-        this.yearOfProduction = yearOfProduction;
+    public void setPublicationYear(Year publicationYear) {
+        this.publicationYear = publicationYear;
     }
 
     @Override
     public String toString() {
         return "Book{" +
-                "Author='" + Author + '\'' +
+                "Author='" + author + '\'' +
                 ", title='" + title + '\'' +
-                ", yearOfProduction=" + yearOfProduction +
+                ", publicationYear=" + publicationYear +
                 '}';
     }
 }
+
+
+
 

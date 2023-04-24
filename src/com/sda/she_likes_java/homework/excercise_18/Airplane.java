@@ -1,55 +1,59 @@
 package com.sda.she_likes_java.homework.excercise_18;
 
 public class Airplane {
-    private int xCoordination;
-    private int yCoordination;
+    private int xCoordinates;
+    private int yCoordinates;
+    boolean isFlying;
 
-    public Airplane(int xCoordination, int yCoordination) {
-        this.xCoordination = xCoordination;
-        this.yCoordination = yCoordination;
+    public Airplane(int xCoordinates, int yCoordinates, boolean isFlying) {
+        this.xCoordinates = xCoordinates;
+        this.yCoordinates = yCoordinates;
+        this.isFlying = isFlying;
     }
 
-    public int getxCoordination() {
-        return xCoordination;
+    public int getxCoordinates() {
+        return xCoordinates;
     }
 
-    public void setxCoordination(int xCoordination) {
-        this.xCoordination = xCoordination;
+    public void setxCoordinates(int xCoordinates) {
+        this.xCoordinates = xCoordinates;
     }
 
-    public int getyCoordination() {
-        return yCoordination;
+    public int getyCoordinates() {
+        return yCoordinates;
     }
 
-    public void setyCoordination(int yCoordination) {
-        this.yCoordination = yCoordination;
+    public void setyCoordinates(int yCoordinates) {
+        this.yCoordinates = yCoordinates;
     }
 
-    private void takeOff(){
-        if(xCoordination==0|| yCoordination==100) {
+    public void takeOff() {
+        if (xCoordinates == 0 && yCoordinates > 0) {
             System.out.println("Taking off");
         }
     }
-    private void land(){
-        if (xCoordination>0){
+
+    public void land() {
+        if (xCoordinates > 0) {
             System.out.println("Time to land");
         }
 
     }
-    private void flyTo(int xCoordinates, int yCoordinates) {
+
+    public void flyTo(int xCoordinates, int yCoordinates) {
         takeOff();
     }
 
 
-        private void currentStateOfAirplane(){
-        if(xCoordination==0|| yCoordination==0){
+    public void currentStateOfAirplane() {
+        if (xCoordinates == 0 && yCoordinates == 0) {
             System.out.println("The airplane is in the hangar");
-
         }
-        if(xCoordination>0){
+        if (xCoordinates > 0 && yCoordinates > 0) {
             System.out.println("The airplane is in the air");
+        } else if (xCoordinates < 100 && yCoordinates < 100) {
+            System.out.println("The plane is landing!");
         }
-
     }
 
 }

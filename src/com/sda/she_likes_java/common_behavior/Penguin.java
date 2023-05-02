@@ -1,4 +1,4 @@
-package com.sda.she_likes_java.common_behavior.wrong_approach;
+package com.sda.she_likes_java.common_behavior;
 
 public class Penguin extends Bird implements Swimable {
 

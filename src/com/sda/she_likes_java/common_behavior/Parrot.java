@@ -1,6 +1,4 @@
-package com.sda.she_likes_java.common_behavior.wrong_approach;
-
-import com.sun.source.tree.BreakTree;
+package com.sda.she_likes_java.common_behavior;
 
 public class Parrot extends Bird {
     @Override

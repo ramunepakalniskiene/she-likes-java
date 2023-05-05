@@ -49,6 +49,10 @@ public class Main {
         VehicleUnits.whichVehicleMethod(submarineSubmarine);
         VehicleUnits.whichVehicleMethod(submarineVehicle);
 
+        System.out.println("catsting without VehicleUnits");
+        ((Flying) airplaneAirplane).Flying();
+        ((Floating) shipShip).Floating();
+        ((Diving) submarineSubmarine).Diving();
 
     }
 }

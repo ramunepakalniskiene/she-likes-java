@@ -35,6 +35,6 @@ public class ListMain {
         cars.add(new Car("green"));
         cars.add(new Car("yellow"));
         System.out.println(" Get car index 2: " + cars.get(2));
-        ;
+
     }
 }

@@ -15,6 +15,7 @@ public class Main {
         Map<String, Trousers> myJeans = new HashMap<>();
         myJeans.put("My favorite jeans", new Trousers("jeans", "Levis"));
         myJeans.put("My old one", new Trousers("unknown material", "Primark"));
+        myJeans.put("My fashionable jeans", new Trousers("jeans-jeans", "Christian-Dior"));
 
         Map<Person, Trousers> personsTrousers = new HashMap<>();
         personsTrousers.put(new Person("Ra", "P"), new Trousers("polish-material", "Pepco"));

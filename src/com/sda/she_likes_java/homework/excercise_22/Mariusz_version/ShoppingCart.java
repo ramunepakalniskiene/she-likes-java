@@ -23,8 +23,8 @@ public class ShoppingCart {
 //        for (int i = 0; i < items.size(); i++) {
 ////            sum += items.get(i).getPriceInUSD();
 ////        }
-        for (Item item : items) {
-            sum += item.getPriceInUSD();
+        for (Item itema : items) {
+            sum += itema.getPriceInUSD();
         }
 
         return sum;

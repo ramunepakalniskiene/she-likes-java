@@ -30,9 +30,8 @@ public class Main {
 
         System.out.println(createItem("coca-cola", 1.99));
 
-        ShoppingCart shoppingCart = new ShoppingCart("fanta", 3.05, allItems);
         ShoppingCart shoppingCart1 = new ShoppingCart("whiskey", 19.99, all2Items);
         List<ShoppingCart> allShoppingCarts = new ArrayList<>();
-        shoppingCart.shoppingCartValue();
+        shoppingCart1.shoppingCartValue();
     }
 }

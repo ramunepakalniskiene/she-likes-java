@@ -30,7 +30,8 @@ public class ShoppingCart extends Item {
 
     public double shoppingCartValue() {
         double value = 0;
-        value = getProductPrice() + value;
+        for (Item item : basket)
+            value = getProductPrice() + value;
         return value;
     }
 

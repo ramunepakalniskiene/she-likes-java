@@ -23,7 +23,9 @@ public class Main {
         personsTrousers.put(new Person("Zimmer", "Call"), new Trousers("jeans", "big star"));
 
         System.out.println(personsTrousers);
+        System.out.println("===========");
         printMyJeans(myJeans);
+        printMyPersonJeans(personsTrousers);
     }
 
     public static void printMyJeans(Map<String, Trousers> trousersMap) {
@@ -41,6 +43,15 @@ public class Main {
 
 
         }
+    }
+
+    public static void printMyPersonJeans(Map<Person, Trousers> personTrousers) {
+        for (Map.Entry<Person, Trousers> item : personTrousers.entrySet()) {
+            System.out.println("Get key item" + item.getKey());
+
+
+        }
+
 
     }
 }

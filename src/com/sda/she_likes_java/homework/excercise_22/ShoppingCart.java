@@ -1,19 +1,18 @@
 package com.sda.she_likes_java.homework.excercise_22;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingCart extends Item {
+public class ShoppingCart {
     List<Item> basket;
 
-    public ShoppingCart(String productName, double productPrice, List<Item> basket) {
-        super(productName, productPrice);
-        this.basket = basket;
+    public ShoppingCart() {
+        this.basket = new ArrayList<>();
     }
 
-    public void setBasket(List<Item> basket) {
-        this.basket = basket;
-
+    public void displayBasket() {
+        System.out.println("The basket contains" + basket);
     }
 
     @Override
@@ -23,17 +22,17 @@ public class ShoppingCart extends Item {
                 '}';
     }
 
-    public List<Item> addToShoppingCart(ShoppingCart shoppingCart) {
+    public void addToShoppingCart(Item products) {
+        basket.add(products);
 
-        return null;
     }
 
     public double shoppingCartValue() {
         double value = 0;
-        for (Item item : basket)
-            value = getProductPrice() + value;
+        for (Item items : basket) {
+            value += items.getProductPrice();
+        }
         return value;
     }
-
 }
 

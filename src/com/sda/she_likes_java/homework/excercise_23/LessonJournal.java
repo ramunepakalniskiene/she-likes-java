@@ -13,7 +13,7 @@ public class LessonJournal {
     lessonJournal.put(new Pupil("Aaron", "Collins"), new Subject("geography", new int[]{3, 4, 6, 7, 8}));
 
 
-    System.out.println("The list is:" + lessonJournal);
+    System.out.println("The total list is:" + lessonJournal);
     listOfPupils(lessonJournal);
     listOfSubject(lessonJournal);
 
@@ -30,21 +30,6 @@ public class LessonJournal {
   public static void listOfSubject(Map<Pupil, Subject> allPupils) {
     for (Map.Entry<Pupil, Subject> list : allPupils.entrySet()) {
       System.out.println("List of subject is: " + list.getValue());
-
-
-//        Set<Pupil> pupils= new HashSet<>();
-//        pupils.add());
-//        pupils.add(new Pupil());
-//        pupils.add(new Pupil());
-//        pupils.add(new Pupil("Aaron", "Collins"));
-//        pupils.add(new Pupil("Suzanne", "Oxford"));
-//        pupils.add(new Pupil("Rudolf", "King"));
-//        pupils.add(new Pupil("Catherine", "Holms"));
-//
-//        System.out.println("The list of pupils: " + pupils);
-//
-//        System.out.println("");
-
 
     }
   }

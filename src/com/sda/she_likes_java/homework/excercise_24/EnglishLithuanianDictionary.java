@@ -22,7 +22,6 @@ public class EnglishLithuanianDictionary {
         dictionary.put("house", "namas");
         dictionary.put("car", " masina");
 
-
     }
 
     public void translate(String englishWord) {

@@ -53,7 +53,7 @@ public class Main {
         System.out.println("The list is of subject grades Main: " + subjectGrades);
         System.out.println("The list of subject grades ClassJournal is: " + allPupils.getPupilGrades((firstPupil), lithuanian));
 
-        List<>
+
         System.out.println(allPupils.getPupilGrades(new Pupil("j", "m", "6C"), biology));
         allPupils.getPupilGrades(firstPupil, biology);
         allPupils.getPupilGrades(secondPupil, chemistry);

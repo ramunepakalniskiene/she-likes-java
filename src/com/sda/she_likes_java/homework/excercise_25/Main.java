@@ -3,6 +3,7 @@ package com.sda.she_likes_java.homework.excercise_25;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,9 +16,10 @@ public class Main {
         citiesCountries.put("Brazil", List.of("Rio de Janeiro", "Sao Paulo", "Brasilia"));
         citiesCountries.put("Argentina", List.of("Buenos Aires", "Mar del Plata", "Rosario"));
 
+
         allCitiesCountries.getAllCountriesAndTheirCities(citiesCountries);
-        allCitiesCountries.getCountries(citiesCountries);
         allCitiesCountries.getCities(citiesCountries);
+        allCitiesCountries.getCountries(citiesCountries);
 
 
     }

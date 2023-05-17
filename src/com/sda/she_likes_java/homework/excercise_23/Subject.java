@@ -6,9 +6,9 @@ import java.util.Objects;
 
 public class Subject {
     private String subject;
-    private int[] grades;
+    private List<Integer> grades;
 
-    public Subject(String subject, int[] grades) {
+    public Subject(String subject, List<Integer> grades) {
         this.subject = subject;
         this.grades = grades;
     }
@@ -21,11 +21,11 @@ public class Subject {
         this.subject = subject;
     }
 
-    public int[] getGrades() {
+    public List<Integer> getGrades() {
         return grades;
     }
 
-    public void setGrades(int[] grades) {
+    public void setGrades(List<Integer> grades) {
         this.grades = grades;
     }
 
@@ -33,7 +33,7 @@ public class Subject {
     public String toString() {
         return "Subject{" +
                 "subject='" + subject + '\'' +
-                ", grades=" + Arrays.toString(grades) +
+                ", grades=" + grades +
                 '}';
     }
 }

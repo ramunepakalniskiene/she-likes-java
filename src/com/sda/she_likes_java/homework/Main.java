@@ -1,5 +1,7 @@
 package com.sda.she_likes_java.homework;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -25,5 +27,16 @@ public class Main {
         int eleven = 11;
         double trueEleven = 11;
         System.out.println(eleven + " + " + 11);
+        System.out.println(getSum());
     }
+
+    public static int getSum() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int sum = a + b + c;
+        return sum;
+    }
+
 }

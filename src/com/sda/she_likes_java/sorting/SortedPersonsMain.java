@@ -18,9 +18,9 @@ public class SortedPersonsMain {
         persons.add(olga);
         persons.add(rasmus);
 
-//        System.out.println("List before sorting" + persons);
-//        System.out.println("comparing 40 to 25: " + olga.compareTo(olaf));
-//        System.out.println("comparing 25 to 38: " + olaf.compareTo(rasmus));
+        System.out.println("List before sorting" + persons);
+        System.out.println("comparing 40 to 25: " + olga.compareTo(olaf));
+        System.out.println("comparing 25 to 38: " + olaf.compareTo(rasmus));
 
         Collections.sort(persons);
 
@@ -29,6 +29,25 @@ public class SortedPersonsMain {
 //        AgedReversedOrderOfSortedPerson reversedAgeOrder = new AgedReversedOrderOfSortedPerson();
         Collections.sort(persons, new AgedReversedOrderOfSortedPerson());
         System.out.println("reversed order :" + persons);
+        System.out.println("---------------------------");
+
+        List<String> names = new ArrayList<>();
+        names.add("Ramune");
+        names.add("Lina");
+        names.add("Alma");
+        names.add("Karolina");
+
+        Collections.sort(names);
+        System.out.println("Sorted names (String sorting): " + names);
+        System.out.println("------------");
+
+        Collections.sort(persons, new LexicalOrderForSortedPerson());
+        System.out.println(persons);
+        System.out.println("----------------------");
+
+        Collections.sort(persons, new ReversedLexicalOrderForSortedPerson());
+        System.out.println(persons);
+
 
     }
 

@@ -4,6 +4,6 @@
 1, 3
 3.compareTo(1) => return 1 - swap positions: 1,3
 1 vs 3
-1.compareTo(3)=> return -1 position stays teh same: 1,3
+1.compareTo(3)=> return -1 position stays the same: 1,3
 1,1
 1.compareTo(1)=> return 0

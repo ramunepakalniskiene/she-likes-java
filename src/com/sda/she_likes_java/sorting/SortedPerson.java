@@ -44,12 +44,13 @@ public class SortedPerson implements Comparable<SortedPerson> {
 //        if age=2 on our instance o.age=3
 //        return o.getAge()-age;
         System.out.println("Called by java");
-        if (age < o.getAge()) {
-            return -1;
-        } else if (age > o.getAge()) {
-            return 1;
-        } else {
-            return 0;
-        }
+//        if (age < o.getAge()) {
+//            return -1;
+//        } else if (age > o.getAge()) {
+//            return 1;
+//        } else {
+//            return 0;
+//        }
+        return Integer.compare(age, o.getAge());
     }
 }

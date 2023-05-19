@@ -26,8 +26,8 @@ public class SortedPersonsMain {
 
         System.out.println("sorted list of objects based on the age " + persons);
         System.out.println("---------------");
-//        AgedReversedOrderOfSortedPerson reversedAgeOrder = new AgedReversedOrderOfSortedPerson();
-        Collections.sort(persons, new AgedReversedOrderOfSortedPerson());
+        AgedReversedOrderOfSortedPerson reversedAgeOrder = new AgedReversedOrderOfSortedPerson();
+        Collections.sort(persons, reversedAgeOrder);
         System.out.println("reversed order :" + persons);
         System.out.println("---------------------------");
 
@@ -46,6 +46,10 @@ public class SortedPersonsMain {
         System.out.println("----------------------");
 
         Collections.sort(persons, new ReversedLexicalOrderForSortedPerson());
+        System.out.println(persons);
+        System.out.println("-------------------------");
+
+        Collections.sort(persons, new ReversedLexicalOrderForSortedPerson().reversed().thenComparing(reversedAgeOrder));
         System.out.println(persons);
 
 

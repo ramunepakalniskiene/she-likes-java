@@ -10,13 +10,14 @@ public class House implements Comparable<House> {
 
     public House(int numberOfRooms, int numberOfFloors, int numberOfBathrooms, String address) {
         this.numberOfRooms = numberOfRooms;
-        NumberOfFloors = numberOfFloors;
+        this.NumberOfFloors = numberOfFloors;
         this.numberOfBathrooms = numberOfBathrooms;
         this.address = address;
     }
 
     @Override
     public int compareTo(House o) {
+
         return numberOfBathrooms - o.numberOfBathrooms;
     }
 

@@ -1,0 +1,2 @@
+Create a class implementing the Comparator interface to sort objects of type String based on their length.
+Prepare the Main class and perform sorting on the examples.

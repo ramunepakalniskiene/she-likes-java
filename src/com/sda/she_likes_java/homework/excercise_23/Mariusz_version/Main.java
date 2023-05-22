@@ -5,7 +5,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        ClassroomJournal allPupils = new ClassroomJournal();
+        //creating classroomJournal object
+        ClassroomJournal classroomJournal = new ClassroomJournal();
+        // printing out all pupils and objects created in ClassroomJournal
+        System.out.println(("Printing out list of pupil created in CJ clas: " + classroomJournal.getAllPupils()));
+        System.out.println("Printing out list Subject from CJ class: " + classroomJournal.getAllSubjects());
+
+        //creating some pupils in Main
         Pupil firstPupil = new Pupil("Aaron", "Jones", "7B");
         Pupil secondPupil = new Pupil("Tom", "Rogers", "5A");
         Pupil thirdPupil = new Pupil("Melisa", "Core", "6C");
@@ -13,50 +19,58 @@ public class Main {
         Pupil fithPupil = new Pupil("Ryan", "Bills", "7C");
         Pupil sixthPupil = new Pupil("Amanda", "Fridge", "6A");
 
-        Set<Pupil> allPupilSet = new HashSet<>();
-        allPupilSet.add(firstPupil);
-        allPupilSet.add(secondPupil);
-        allPupilSet.add(thirdPupil);
-        allPupilSet.add(fourthPupil);
-        allPupilSet.add(fithPupil);
-        allPupilSet.add(sixthPupil);
-        System.out.println("List of pupil from Main: " + allPupilSet);
-        System.out.println("List of pupil from ClassJournal: " + allPupils.getAllPupils());
+        //adding pupils to list
+        List<Pupil> allPupilsCreatedInMain = new ArrayList<>();
+        allPupilsCreatedInMain.add(firstPupil);
+        allPupilsCreatedInMain.add(secondPupil);
+        allPupilsCreatedInMain.add(thirdPupil);
+        allPupilsCreatedInMain.add(fourthPupil);
+        allPupilsCreatedInMain.add(fithPupil);
+        allPupilsCreatedInMain.add(sixthPupil);
+        // sorting pupils by surename from outside class
+        Collections.sort(allPupilsCreatedInMain, new ComparatorPupil());
+        System.out.println(allPupilsCreatedInMain);
+
+
+        System.out.println("List of pupil from Main: " + allPupilsCreatedInMain);
         System.out.println("-------------------");
 
-        Subject biology = new Subject("Biology");
-        Subject english = new Subject("Chemistry");
+        //  Creating some subjects in Main
+        Subject english = new Subject("English");
         Subject lithuanian = new Subject("Lithuanian");
         Subject chemistry = new Subject("Chemistry");
+
+        // adding subjects from Main to list
         List<Subject> allSubjectsMain = new ArrayList<>();
-        allSubjectsMain.add(biology);
         allSubjectsMain.add(english);
         allSubjectsMain.add(lithuanian);
         allSubjectsMain.add(chemistry);
 
         System.out.println("List of all Subjects form Main: " + allSubjectsMain);
-        System.out.println("List of all Subjects form ClassJournal: " + allPupils.getAllSubjects());
-
-
+        System.out.println("List of all Subjects form ClassJournal: " + classroomJournal.getAllSubjects());
         System.out.println("-------------------");
-        System.out.println("List of currentClass is: ");
-        System.out.println("-------------------");
-        System.out.println("List of grades is: ");
-
 
         List<SubjectGrades> subjectGrades = new ArrayList<>();
-        subjectGrades.add(0, new SubjectGrades(biology));
-        subjectGrades.add(1, new SubjectGrades(english));
-        subjectGrades.add(2, new SubjectGrades(lithuanian));
-        subjectGrades.add(3, new SubjectGrades(chemistry));
-
+        subjectGrades.add(0, new SubjectGrades(english));
+        subjectGrades.add(0, new SubjectGrades(lithuanian));
+        subjectGrades.add(0, new SubjectGrades(chemistry));
         System.out.println("The list is of subject grades Main: " + subjectGrades);
-        System.out.println("The list of subject grades ClassJournal is: " + allPupils.getPupilGrades((firstPupil), lithuanian));
+        System.out.println("--------------------");
 
 
-        System.out.println(allPupils.getPupilGrades(new Pupil("j", "m", "6C"), biology));
-        allPupils.getPupilGrades(firstPupil, biology);
-        allPupils.getPupilGrades(secondPupil, chemistry);
+        System.out.println(classroomJournal.getPupilSubjects(sixthPupil));
+        System.out.println(classroomJournal.getPupilGrades(sixthPupil, chemistry));
+        System.out.println(classroomJournal.getAllSubjects());
+        System.out.println(classroomJournal.getAllPupils());
+
+//        System.out.println("The list of subject grades ClassJournal is: " + classroomJournal.getPupilGrades(firstPupil,chemistry));
+//        System.out.println(classroomJournal.getPupilGrades(firstPupil,english));
+
+//
+//        System.out.println(classroomJournal.getPupilGrades(new Pupil("j", "m", "6C"), chemistry));
+//        classroomJournal.getPupilGrades(firstPupil, lithuanian);
+//        classroomJournal.getPupilGrades(secondPupil, english);
+//        System.out.println(firstPupil);
 
 
     }

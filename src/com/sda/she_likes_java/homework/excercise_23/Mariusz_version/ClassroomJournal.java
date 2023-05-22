@@ -12,12 +12,12 @@ public class ClassroomJournal {
 
     public ClassroomJournal() {
         pupils = new HashSet<>();
-        pupils.add(new Pupil("Aaron", "Jones", "7B"));
-        pupils.add(new Pupil("Melisa", "Core", "6C"));
-        pupils.add(new Pupil("Tom", "Rogers", "5A"));
-        pupils.add(new Pupil("James", "Collin", "5B"));
-        pupils.add(new Pupil("Ryan", "Bills", "7C"));
-        pupils.add(new Pupil("Amanda", "Fridge", "6A"));
+        pupils.add(new Pupil("Sarah", "Jones", "6B"));
+        pupils.add(new Pupil("Melinda", "Hopkins", "6C"));
+        pupils.add(new Pupil("Tamara", "Rodrigues", "5A"));
+        pupils.add(new Pupil("Cameron", "Barry", "5B"));
+        pupils.add(new Pupil("Philip", "Step", "7C"));
+        pupils.add(new Pupil("Austin", "Cooper", "6A"));
 
         subjects = new HashSet<>();
         subjects.add(new Subject("biology"));
@@ -69,5 +69,6 @@ public class ClassroomJournal {
         }
         return List.of();
     }
+
 }
 

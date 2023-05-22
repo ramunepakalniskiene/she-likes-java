@@ -3,7 +3,11 @@ package com.sda.she_likes_java.homework.excercise_23.Mariusz_version;
 
 import java.util.Objects;
 
-public class Pupil {
+public class Pupil implements Comparable<Pupil> {
+    @Override
+    public int compareTo(Pupil o) {
+        return surname.compareTo(o.surname);
+    }
 
     private String name;
     private String surname;

@@ -1,2 +1,4 @@
 Create a class implementing the Comparator interface to sort objects of type String based on their length.
 Prepare the Main class and perform sorting on the examples.
+The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc
+comparator sorting is done through a separate class.

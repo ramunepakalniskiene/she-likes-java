@@ -4,3 +4,6 @@ Create a MyDate class containing three fields:
 - day - of type int
 Implement the Comparable interface for your class.
 Create a Main class, add four MyDate objects to the list and perform sorting.
+
+ Comparable provides a single sorting sequence.
+ In other words, we can sort the collection on the basis of a single element such as id, name, and price.

@@ -30,11 +30,11 @@ public class SecretExampleMain {
         System.out.println("Now with single catch");
         try {
             secretStorage.decrypt();
+        } catch (DecryptionIssueException e) {
+            System.out.println("Cannot decrypt enemy's secret " + e.getMessage());
         } catch (Exception e) {
             System.out.println("Generic catch all :)");
-
         }
-
 
     }
 }

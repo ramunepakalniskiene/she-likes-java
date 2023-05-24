@@ -9,9 +9,9 @@ public class Pupil implements Comparable<Pupil> {
         return surname.compareTo(o.surname);
     }
 
-    private String name;
-    private String surname;
-    private String currentClass;
+    private static String name;
+    private static String surname;
+    private static String currentClass;
 
     public Pupil(String name, String surname, String currentClass) {
         this.name = name;
@@ -71,6 +71,12 @@ public class Pupil implements Comparable<Pupil> {
 
     public void setCurrentClass(String currentClass) {
         this.currentClass = currentClass;
+    }
+
+
+    static Pupil createPupil() {
+        return new Pupil(name, surname, currentClass);
+
     }
 }
 

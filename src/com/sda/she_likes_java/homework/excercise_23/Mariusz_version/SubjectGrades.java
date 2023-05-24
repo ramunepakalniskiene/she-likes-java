@@ -10,20 +10,11 @@ public class SubjectGrades {
 
     public SubjectGrades(Subject subject) {
         this.subject = subject;
-        grades = new ArrayList<>();
-        grades.add(new Grade(5));
-        grades.add(new Grade(10));
-        grades.add(1, new Grade(7)); // what does the index mean?
-        grades.add(2, new Grade(9));
-//        grades.add(1, (new Grade(10)));
-//        grades.add(1, (new Grade(9)));
-//        grades.add(1, (new Grade(8)));
-//        grades.add(1, (new Grade(7)));
-//        grades.add(2, new Grade(9));
-//        grades.add(2, new Grade(9));
-//        grades.add(2, new Grade(9));
-//        grades.add(2, new Grade(9));
-
+        grades = new ArrayList<>(4);
+        ;
+        grades.add(0, new Grade(5));
+        grades.add(0, new Grade(6));
+        grades.add(0, new Grade(7));
     }
 
     public void addGrade(Grade grade) {

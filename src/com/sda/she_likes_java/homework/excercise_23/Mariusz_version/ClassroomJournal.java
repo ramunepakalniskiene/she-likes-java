@@ -12,30 +12,12 @@ public class ClassroomJournal {
 
     public ClassroomJournal() {
         pupils = new HashSet<>();
-        pupils.add(new Pupil("Sarah", "Jones", "6B"));
-        pupils.add(new Pupil("Melinda", "Hopkins", "6C"));
-        pupils.add(new Pupil("Tamara", "Rodrigues", "5A"));
-        pupils.add(new Pupil("Cameron", "Barry", "5B"));
-        pupils.add(new Pupil("Philip", "Step", "7C"));
-        pupils.add(new Pupil("Austin", "Cooper", "6A"));
 
         subjects = new HashSet<>();
-        subjects.add(new Subject("biology"));
-        subjects.add(new Subject("maths"));
-        subjects.add(new Subject("literature"));
 
         pupilSubjects = new HashMap<>();
-        pupilSubjects.put(new Pupil("Aaron", "Jones", "7B"), subjects);
-        pupilSubjects.put(new Pupil("Melisa", "Core", "6C"), subjects);
-        pupilSubjects.put(new Pupil("Tom", "Rogers", "5A"), subjects);
-        pupilSubjects.put(new Pupil("James", "Collin", "5B"), subjects);
-        pupilSubjects.put(new Pupil("Ryan", "Bills", "7C"), subjects);
-        pupilSubjects.put(new Pupil("Amanda", "Fridge", "6A"), subjects);
-
 
         pupilsGradeFromSubject = new HashMap<>();
-        pupilsGradeFromSubject.put(new Pupil("Phillip", "Rogers", "5A"), new ArrayList<>());
-
 
     }
 

@@ -10,11 +10,12 @@ public class SubjectGrades {
 
     public SubjectGrades(Subject subject) {
         this.subject = subject;
-        grades = new ArrayList<>(4);
-        ;
+        grades = new ArrayList<>(1);
         grades.add(0, new Grade(5));
-        grades.add(0, new Grade(6));
-        grades.add(0, new Grade(7));
+        grades.add(0, new Grade(8));
+        grades.add(0, new Grade(8));
+        grades.add(0, new Grade(8));
+
     }
 
     public void addGrade(Grade grade) {

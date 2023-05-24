@@ -56,17 +56,19 @@ public class Main {
         SubjectGrades subjectGradesChemistry = new SubjectGrades(chemistry);
 
         //-----Checking output-----
-        System.out.println(subjectGradesEnglish.getGrades());
-        System.out.println(subjectGradesLithuanian.getGrades());
-        System.out.println(subjectGradesChemistry.getSubject());
+        System.out.println("Grades english: " + subjectGradesEnglish.getGrades());
+        System.out.println("Grades lithuanian: " + subjectGradesLithuanian.getGrades());
+        System.out.println("Grades chemistry: " + subjectGradesChemistry.getGrades());
+        System.out.println("------------------");
 
 
         // creating SubjectGrades List
-        List<SubjectGrades> allSubjectGrades = new ArrayList<>();
+        List<SubjectGrades> allSubjectGrades = new ArrayList<>(1);
         allSubjectGrades.add(0, subjectGradesEnglish);
-        allSubjectGrades.add(0, subjectGradesLithuanian);
-        allSubjectGrades.add(0, subjectGradesChemistry);
+        allSubjectGrades.add(1, subjectGradesLithuanian);
+        allSubjectGrades.add(2, subjectGradesChemistry);
         System.out.println("All subjectGrades: " + allSubjectGrades);
+
 
         Map<Pupil, List<SubjectGrades>> pupilsGradeFromSubject = new HashMap<>();
         pupilsGradeFromSubject.put(firstPupil, allSubjectGrades);
@@ -76,8 +78,14 @@ public class Main {
         pupilsGradeFromSubject.put(fithPupil, allSubjectGrades);
         pupilsGradeFromSubject.put(sixthPupil, allSubjectGrades);
 
-        System.out.println("Printing out all Pupil+Subjects+Grades" + pupilsGradeFromSubject.entrySet());
+        System.out.println(pupilsGradeFromSubject.size());
+        System.out.println(pupilsGradeFromSubject.get(0));
+
+        System.out.println("Printing out all Pupil+Subjects+Grades" + pupilsGradeFromSubject.values());
         System.out.println(pupilsGradeFromSubject.get(sixthPupil)); // no grades assigned, so returned null
+        System.out.println(classroomJournal.getPupilGrades(secondPupil, english));
+        System.out.println(classroomJournal.getPupilSubjects(firstPupil));
+
     }
 
 }

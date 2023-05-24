@@ -9,6 +9,11 @@ public class ClassroomJournal {
     private final Set<Subject> subjects;
     private final Map<Pupil, Set<Subject>> pupilSubjects;
     private final Map<Pupil, List<SubjectGrades>> pupilsGradeFromSubject;
+    private final Map<Teacher, Set<Subject>> teacherFromSubject;
+
+    public Map<Teacher, Set<Subject>> getTeacherFromSubject() {
+        return teacherFromSubject;
+    }
 
     public ClassroomJournal() {
         pupils = new HashSet<>();
@@ -18,6 +23,8 @@ public class ClassroomJournal {
         pupilSubjects = new HashMap<>();
 
         pupilsGradeFromSubject = new HashMap<>();
+
+        teacherFromSubject = new HashMap<>();
 
     }
 

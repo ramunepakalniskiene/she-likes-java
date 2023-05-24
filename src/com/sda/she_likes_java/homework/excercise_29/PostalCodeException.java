@@ -1,9 +1,9 @@
 package com.sda.she_likes_java.homework.excercise_29;
 
-public class PostalCode {
+public class PostalCodeException extends Exception {
     private final String postalCode;
 
-    public PostalCode(String postalCode) {
+    public PostalCodeException(String postalCode) {
         this.postalCode = postalCode;
     }
 
@@ -19,7 +19,7 @@ public class PostalCode {
     }
 
     public void checkPostalCode(String postalCode) throws Exception {
-        Boolean postalCodeCheck = false;
+        Boolean postalCodeCheck = true;
         if (postalCodeCheck) {
             return;
         } else {

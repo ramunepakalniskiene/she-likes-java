@@ -27,6 +27,11 @@ public class Main {
         allPupilsSet.add(fithPupil);
         allPupilsSet.add(sixthPupil);
 
+        //creating some teachers
+        Teacher englishTeacher = new Teacher("Flora", "Smith", "5B");
+        Teacher lithuaninaTeacher = new Teacher("Agne", "Paule", "6A");
+        Teacher chemistryTeacher = new Teacher("Julia", "Frog", "7A");
+
         //  Creating some subjects in Main
         Subject english = new Subject("English");
         Subject lithuanian = new Subject("Lithuanian");

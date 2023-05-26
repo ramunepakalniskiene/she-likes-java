@@ -46,3 +46,7 @@ public class Teacher {
         return Objects.hash(getName(), getSurename(), getClassNumber());
     }
 }
+//creating some teachers
+//    Teacher englishTeacher = new Teacher("Flora", "Smith", "5B");
+//    Teacher lithuaninanTeacher = new Teacher("Agne", "Paule", "6A");
+//    Teacher chemistryTeacher = new Teacher("Julia", "Frog", "7A");

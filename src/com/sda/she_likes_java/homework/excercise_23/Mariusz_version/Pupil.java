@@ -3,15 +3,11 @@ package com.sda.she_likes_java.homework.excercise_23.Mariusz_version;
 
 import java.util.Objects;
 
-public class Pupil implements Comparable<Pupil> {
-    @Override
-    public int compareTo(Pupil o) {
-        return surname.compareTo(o.surname);
-    }
+public class Pupil {
 
-    private static String name;
-    private static String surname;
-    private static String currentClass;
+    private String name;
+    private String surname;
+    private String currentClass;
 
     public Pupil(String name, String surname, String currentClass) {
         this.name = name;
@@ -28,7 +24,7 @@ public class Pupil implements Comparable<Pupil> {
                 '}';
     }
 
-    @Override
+
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -73,10 +69,5 @@ public class Pupil implements Comparable<Pupil> {
         this.currentClass = currentClass;
     }
 
-
-    static Pupil createPupil() {
-        return new Pupil(name, surname, currentClass);
-
-    }
 }
 

@@ -38,7 +38,7 @@ public class TestRecordRepository {
             }
         } catch (SQLException e) {
             System.out.println("Unexpected exception" + e);
-            ;
+
         }
 
         return records;

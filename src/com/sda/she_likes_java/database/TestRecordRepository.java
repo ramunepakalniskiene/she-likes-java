@@ -34,7 +34,7 @@ public class TestRecordRepository {
                 String titleFomDb = results.getString("Name");
                 TestRecord recordFromDb = new TestRecord(idFromDb, titleFomDb);
                 records.add(recordFromDb);
-                System.out.println("ID" + results.getInt("ID") + "Title " + results.getString("Title"));
+                System.out.println("ID: " + idFromDb + ", Title " + titleFomDb);
             }
         } catch (SQLException e) {
             System.out.println("Unexpected exception" + e);

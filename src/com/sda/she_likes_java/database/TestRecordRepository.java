@@ -30,8 +30,8 @@ public class TestRecordRepository {
             ResultSet results = statement.executeQuery(allTestRecordsQuery);
             // map results to java objects - TestRecord
             while (results.next()) {
-                Integer idFromDb = results.getInt(" ID");
-                String titleFomDb = results.getString(" Name");
+                Integer idFromDb = results.getInt("ID");
+                String titleFomDb = results.getString("Name");
                 TestRecord recordFromDb = new TestRecord(idFromDb, titleFomDb);
                 records.add(recordFromDb);
                 System.out.println("ID" + results.getInt("ID") + "Title " + results.getString("Title"));

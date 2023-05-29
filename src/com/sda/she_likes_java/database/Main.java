@@ -12,5 +12,6 @@ public class Main {
         } catch (SQLException e) {
             System.out.println("I need to handle it!!");
         }
+
     }
 }

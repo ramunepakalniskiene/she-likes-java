@@ -11,5 +11,9 @@ public class TestRecordProgram {
         TestRecordRepository recordRepository = new TestRecordRepository(connection);
         recordRepository.getAllTestRowsFromDB();
 
+        System.out.println("Let's store some data");
+        TestRecord newRecord = new TestRecord(9, "First insert");
+        recordRepository.storeTestRecordIntoDataBase(newRecord);
     }
+
 }

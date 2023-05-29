@@ -12,8 +12,11 @@ public class TestRecordProgram {
         recordRepository.getAllTestRowsFromDB();
 
         System.out.println("Let's store some data");
-        TestRecord newRecord = new TestRecord(9, "First insert");
-        recordRepository.storeTestRecordIntoDataBase(newRecord);
+//        TestRecord newRecord = new TestRecord(10, "Second insert");
+//        recordRepository.storeTestRecordIntoDataBase(newRecord);
+
+        System.out.println("Reading data from db after insert");
+        recordRepository.getAllTestRowsFromDB();
     }
 
 }

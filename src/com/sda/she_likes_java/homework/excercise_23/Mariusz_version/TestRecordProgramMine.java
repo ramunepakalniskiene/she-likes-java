@@ -13,7 +13,7 @@ public class TestRecordProgramMine {
         recordRepository.getAllTestRowsFromDB();
 
         System.out.println("Let's store some data");
-        TestRecordMine newRecord = new TestRecordMine(1, "Aaron", "Jones", "5B");
+        TestRecordMine newRecord = new TestRecordMine(3, "Aaron", "Jones", "5B");
         recordRepository.storeTestRecordIntoDataBase(newRecord);
 
         System.out.println("Reading data from db after insert");

@@ -39,8 +39,6 @@ public class Main {
         System.out.println("Printing out set of subjects" + allSubjects);
         System.out.println("=========================================");
 
-        // CAN NOT CONNECT GRADES SUBJECTS and PUPIL!!! SOS :)
-
         SubjectGrades englishGrades = new SubjectGrades(english);
         SubjectGrades lithuanianGrades = new SubjectGrades(lithuanian);
         SubjectGrades chemistryGrades = new SubjectGrades(chemistry);

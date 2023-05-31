@@ -33,7 +33,7 @@ public class DatabaseUtilsPupil {
     // handle internally
     public static Connection getConnectionPupils() {
         try {
-            return DriverManager.getConnection("jdbc:sqlite:C:\\Users\\User\\Desktop\\BIT\\Java\\gs-serving-web-content-main\\she-goes-tech");
+            return DriverManager.getConnection("jdbc:sqlite:accenture.main.Pupil");
         } catch (SQLException e) {
             System.out.println("Exception occurred during database connection: " + e);
             return null;
@@ -42,7 +42,7 @@ public class DatabaseUtilsPupil {
 
     //   declare
     public static Connection getConnectionButSometimesThowException() throws SQLException {
-        return DriverManager.getConnection("jdbc:sqlite:C:\\Users\\User\\Desktop\\BIT\\Java\\gs-serving-web-content-main\\she-goes-tech");
+        return DriverManager.getConnection("jdbc:sqlite:accenture.main.Pupil");
     }
 //    public static Connection getConnection() {
 //        try {

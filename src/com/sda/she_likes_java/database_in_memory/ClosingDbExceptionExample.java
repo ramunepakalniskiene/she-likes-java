@@ -27,6 +27,15 @@ public class ClosingDbExceptionExample {
                 }
             }
         }
+        System.out.println("now let's use better way to close connection - available in JAVA 7");
+        System.out.println("Try with resources");
+
+        try (Connection conn = DbConnectionUtils.getConnectionRiskyWay(DbCredentials.h2InMemoryUrl,
+                DbCredentials.h2UserName, DbCredentials.h2Password)) {
+
+        } catch (SQLException e) {
+            System.out.println("Some exception: " + e);
+        }
     }
 
     private static void handleString(String string) {

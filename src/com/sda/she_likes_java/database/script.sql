@@ -61,3 +61,6 @@ CREATE TABLE PUPIL
     SURNAME       VARCHAR(255) NOT NULL,
     CURRENT_CLASS VARCHAR(255) NOT NULL
 );
+--------------------------------------------------------2023-06-02-----------------
+INSERT INTO STUDENTS (NAME, SURNAME, AGE, SEX, GRADE)
+VALUES (?, ?, ?, ?);

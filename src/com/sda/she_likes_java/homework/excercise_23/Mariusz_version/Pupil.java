@@ -5,12 +5,13 @@ import java.util.Objects;
 
 public class Pupil {
 
-    private int id;
+    private Integer id;
     private String name;
     private String surname;
     private String currentClass;
 
-    public Pupil(String name, String surname, String currentClass) {
+    public Pupil(Integer id, String name, String surname, String currentClass) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.currentClass = currentClass;
@@ -19,7 +20,8 @@ public class Pupil {
     @Override
     public String toString() {
         return "Pupil{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", currentClass='" + currentClass + '\'' +
                 '}';
@@ -70,5 +72,12 @@ public class Pupil {
         this.currentClass = currentClass;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }
 

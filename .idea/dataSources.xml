@@ -9,7 +9,7 @@
       <jdbc-url>jdbc:h2:tcp://localhost/~/Data/she-goes-tech/db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="accenture" uuid="58239590-d6f8-42c1-8b89-3f0a0d0ff00f">
+    <data-source source="LOCAL" name="accenture" uuid="5cf5c325-a300-4e20-b2e5-9e31231776f6">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>

@@ -5,13 +5,21 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DbConnectionUtils {
-    public static Connection getConnection(String dbUrl, String userName, String password) {
+    public static Connection getConnection(String dbUrl, String username, String password) {
         try {
-            return DriverManager.getConnection(dbUrl, userName, password);
-
+            return DriverManager.getConnection(dbUrl,
+                    username,
+                    password);
         } catch (SQLException e) {
             System.out.println("Exception occurred during database connection: " + e);
             return null;
         }
+    }
+
+    public static Connection getConnectionRiskyWay(String dbUrl, String username, String password) throws SQLException {
+        return DriverManager.getConnection(dbUrl,
+                username,
+                password);
+
     }
 }

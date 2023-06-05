@@ -6,4 +6,5 @@ public class SlowRunner implements Jogging {
         System.out.println("I am very slow");
 
     }
+
 }

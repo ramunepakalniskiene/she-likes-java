@@ -1,5 +1,7 @@
 package com.sda.she_likes_java.lambda;
 
+import javax.crypto.spec.PSource;
+
 // API - Application programming interface
 // contract - what to do
 public class LambdaExercises {
@@ -29,7 +31,24 @@ public class LambdaExercises {
         justRun(() -> {
             System.out.println("in place");
         });
-        //--------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------\
+        Walker johhny = () -> {
+            System.out.println("Just walking always");
+        };
+        Adder longVersion = (int first, int second) -> {
+            return first + second;
+        };
+        //just names of parameters without types
+        Adder shorterVersion = (first, second) -> {
+            return first + second;
+        };
+        Adder compactVersion = (first, second) -> first + second;
+
+        Adder compactVersionWithManyInstructions = (first, second) -> {
+            System.out.println("Performing operations...");
+            return first + second;
+        };
+
 
     }
 

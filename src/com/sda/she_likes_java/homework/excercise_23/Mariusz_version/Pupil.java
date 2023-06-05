@@ -10,8 +10,7 @@ public class Pupil {
     private String surname;
     private String currentClass;
 
-    public Pupil(Integer id, String name, String surname, String currentClass) {
-        this.id = id;
+    public Pupil(String name, String surname, String currentClass) {
         this.name = name;
         this.surname = surname;
         this.currentClass = currentClass;

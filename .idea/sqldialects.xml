@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/com/sda/she_likes_java/database/script.sql" dialect="Snowflake" />
     <file url="file://$PROJECT_DIR$/src/com/sda/she_likes_java/database_in_memory/DbInit.java" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/com/sda/she_likes_java/homework/excercise_23/Mariusz_version/TestRecordRepositoryMine.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/com/sda/she_likes_java/homework/excercise_23/Mariusz_version/PupilRepository.java" dialect="GenericSQL" />
   </component>
 </project>

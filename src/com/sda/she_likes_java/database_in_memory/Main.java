@@ -14,6 +14,7 @@ public class Main {
 
         System.out.println("Let's read all students");
         AccentureStudentsRepository repository = new AccentureStudentsRepository(connection);
+
         List<AccentureStudent> students = repository.getAllStudents();
         for (AccentureStudent student : students) {
             System.out.println("Students from db" + students);

@@ -7,12 +7,12 @@ public class Main {
     public static void main(String[] args) {
 
         //creating some pupils in Main - OK
-        Pupil firstPupil = new Pupil(1, "Aaron", "Jones", "7B");
-        Pupil secondPupil = new Pupil(2, "Tom", "Rogers", "5A");
-        Pupil thirdPupil = new Pupil(3, "Melisa", "Core", "6C");
-        Pupil fourthPupil = new Pupil(4, "James", "Collin", "5B");
-        Pupil fifthPupil = new Pupil(5, "Ryan", "Bills", "7C");
-        Pupil sixthPupil = new Pupil(6, "Amanda", "Fridge", "6A");
+        Pupil firstPupil = new Pupil("Aaron", "Jones", "7B");
+        Pupil secondPupil = new Pupil("Tom", "Rogers", "5A");
+        Pupil thirdPupil = new Pupil("Melisa", "Core", "6C");
+        Pupil fourthPupil = new Pupil("James", "Collin", "5B");
+        Pupil fifthPupil = new Pupil("Ryan", "Bills", "7C");
+        Pupil sixthPupil = new Pupil("Amanda", "Fridge", "6A");
 
         // creating pupils Set -OK
         Set<Pupil> allPupilsSet = new HashSet<>();

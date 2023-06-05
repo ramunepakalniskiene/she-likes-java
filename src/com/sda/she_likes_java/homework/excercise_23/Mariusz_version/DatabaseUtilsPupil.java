@@ -33,7 +33,7 @@ public class DatabaseUtilsPupil {
     // handle internally
     public static Connection getConnectionPupils() {
         try {
-            return DriverManager.getConnection("jdbc:sqlite:accenture.main.db");
+            return DriverManager.getConnection("jdbc:sqlite:C:/Users/User/Desktop/IT/she-likes-java/accenture");
         } catch (SQLException e) {
             System.out.println("Exception occurred during database connection: " + e);
             return null;
@@ -42,7 +42,7 @@ public class DatabaseUtilsPupil {
 
     //   declare
     public static Connection getConnectionButSometimesThowException() throws SQLException {
-        return DriverManager.getConnection("jdbc:sqlite:accenture.main.db");
+        return DriverManager.getConnection("jdbc:sqlite:C:/Users/User/Desktop/IT/she-likes-java/accenture");
     }
 //    public static Connection getConnection() {
 //        try {

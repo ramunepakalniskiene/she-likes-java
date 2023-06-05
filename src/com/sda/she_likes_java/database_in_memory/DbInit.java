@@ -26,13 +26,21 @@ public class DbInit {
 
     public static void prepareData(Connection dbConnection) {
         try {
+            dbConnection.setAutoCommit(false);
             Statement statement = dbConnection.createStatement();
 
             // create table
             statement.execute(createTableQuery);
             statement.execute(insertDataQuery);
+            dbConnection.commit();
             // insert data to table
         } catch (SQLException e) {
+            try {
+                dbConnection.rollback();
+            } catch (SQLException ex) {
+                throw new RuntimeException();
+            }
+
             System.out.println("Problem with preparing new data: " + e);
         }
     }

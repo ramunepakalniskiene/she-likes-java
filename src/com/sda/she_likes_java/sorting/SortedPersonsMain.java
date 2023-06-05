@@ -1,9 +1,6 @@
 package com.sda.she_likes_java.sorting;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class SortedPersonsMain {
     public static void main(String[] args) {
@@ -28,8 +25,10 @@ public class SortedPersonsMain {
         System.out.println("---------------");
         AgedReversedOrderOfSortedPerson reversedAgeOrder = new AgedReversedOrderOfSortedPerson();
         Collections.sort(persons, reversedAgeOrder);
+
         System.out.println("reversed order :" + persons);
         System.out.println("---------------------------");
+
 
         List<String> names = new ArrayList<>();
         names.add("Ramune");
@@ -52,7 +51,17 @@ public class SortedPersonsMain {
         Collections.sort(persons, new ReversedLexicalOrderForSortedPerson().reversed().thenComparing(reversedAgeOrder));
         System.out.println(persons);
 
-
+        Comparator<SortedPerson> reversedAgeOrderLambda = (o1, o2) -> {
+            System.out.println("Using my AgedReverserOrderOfSortedPerson");
+            if (o1.getAge() < o2.getAge()) {
+                return 1;
+            } else if (o1.getAge() > o2.getAge()) {
+                return -1;
+            } else {
+                return 0;
+            }
+        };
+        Comparable<SortedPerson> brokenComparableLambda = o -> 1;// there is only one object sos no possibility to compare it with some internal object its logically broken
     }
 
 }

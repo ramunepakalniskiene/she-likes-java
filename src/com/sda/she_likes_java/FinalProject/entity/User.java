@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 // records - usefull only the variables are final
-public record User(String name, String surname, LocalDate age, String logging, String password,
+public record User(Long id, String name, String surname, LocalDate age, String logging, String password,
                    LocalDate drivingLicenceIssueDate) {
 
     @Override

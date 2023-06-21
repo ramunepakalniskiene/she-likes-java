@@ -17,7 +17,7 @@ public class PupilRecordProgramMine {
         PupilRepository pupilRepository = new PupilRepository(connection);
         List<Pupil> pupils = pupilRepository.getAllPupils();
         for (Pupil pupil : pupils) {
-            System.out.println(pupils);
+            System.out.println(pupil);
         }
         //third method
         pupilRepository.storePupilRecordIntoDataBase(new Pupil("Collin", " Berns", " 6B"));
